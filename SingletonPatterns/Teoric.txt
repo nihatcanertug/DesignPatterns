@@ -1,0 +1,15 @@
+﻿
+
+Singleton Patterns
+
+It is the most popular pattern belonging to the creational group among design patterns. It has a usage rate of 80% in international standards. The main purpose is to create an object once during the lifetime of the object and to ensure that this created object is used in different locations many times.
+
+It is produced only once in an object instance, it is recommended to use the sample of that object all the time. For example, suppose that an object instance between layers in layered architecture only performs processing when passing between related layers. That is, if it does not have the task of keeping a value on it, it can be generated with a singleton.
+
+To give a concrete example, it can be kept in the Business Layer and can be used in CRUD operations and ensures that the status of the object is controlled.
+
+When we should use it? When we produce an object with singleton, the object we produce always lives in the heap area of ​​RAM until the ISP server is reset. This means cost for us. Therefore, care should be taken when creating an object using singleton.
+
+When producing objects with Singleton, we have to ask the following question: When I produce with singleton, will everyone use the object very often? Is the object's task to carry something?
+
+When we want to provide controlled access to another mechanism, we can provide this control over the object produced with a singleton. We must definitely do this within the concrete class. This pattern is based on the principle that the class is started only once and all requests are routed through this object. The class is responsible for providing its own constraints, not the classes.

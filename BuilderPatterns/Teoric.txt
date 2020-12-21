@@ -1,0 +1,13 @@
+﻿
+
+Builder Pattern
+
+
+In this pattern, the creational design is included in the pattern group. It creates different delegates within the same construction process by separating the properties of a complex object from its real structure. Any builder class inherits an abstract IBuilder object. Also, due to the architecture of the order, it produces different types of products based on representation. The role of a directory is to call the types to create the builder class and bring them together or use them directly.When we examine the lab applications we will do, you will see that there are objects that we can produce as much as we need builders and directories. It calls a builder method. So as a result it is obliged to assemble parts that are inherited from Directory builder interfaces.
+Components in Architecture used in the Builder pattern:
+1.IBuilder: It is an interface that defines what is to be built. It is necessary to apply the product objects to be produced or combined.
+2.Builder: The Builder class that we will host in Concrete are the objects that make up our product objects. Different types are created here based on the delegate. Builder objects located under the Concrete folder allow creating a different product with the same representative.
+3.Directory: When creating a product, that is, it carries out the sequence of operations needed to bring together the components to be created.
+4.Delegate: The class based on the products to be created according to the parts used in the construction phase.
+
+The best example of this pattern is fastfood restaurants. These restaurants have different menu representatives, ie prototypes. However, each menu is based on a stardart. For example, the delegate (delegate) such as Hamburger + French fries + beverage. It is the pattern builder we will use. So a customer can order a cheeseburger, chicken or meat burger, and the procedures to be done in this process are always the same. People working at the counter will prepare burger + potato + drink. This process will not change for any branch. Let's not forget that we act from the idea of ​​creating products.
